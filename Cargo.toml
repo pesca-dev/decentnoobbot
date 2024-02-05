@@ -9,4 +9,4 @@ edition = "2021"
 async-trait = "0.1.77"
 disruption = "0.1.0"
 env_logger = "0.11.1"
-tokio = { version = "1.35.1", features = ["full"] }
+tokio = { version = "1.36.0", features = ["full"] }
