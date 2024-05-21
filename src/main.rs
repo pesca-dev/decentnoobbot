@@ -11,6 +11,7 @@ impl Handler for MyHandler {
         match message.content() {
             "!ping" => message.reply("Pong!").await.unwrap(),
             "!echo" => message.reply("ECHO").await.unwrap(),
+            "!say" => message.reply("What?").await.unwrap(),
             _ => {}
         }
     }
