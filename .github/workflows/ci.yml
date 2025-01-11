@@ -20,7 +20,6 @@ jobs:
           - ubuntu-latest
           - macOS-latest
           - windows-latest
-          - self-hosted
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
@@ -39,7 +38,6 @@ jobs:
           - ubuntu-latest
           - macOS-latest
           - windows-latest
-          - self-hosted
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
