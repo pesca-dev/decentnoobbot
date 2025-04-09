@@ -1,4 +1,4 @@
-FROM rust:1.73-alpine3.18 AS builder
+FROM rust:1.86-alpine3.20 AS builder
 
 WORKDIR /work
 
@@ -14,7 +14,7 @@ RUN apk add --no-cache ca-certificates
 ########################################
 ########################################
 
-FROM alpine:3.18.3 as app
+FROM alpine:3.18.3 AS app
 LABEL org.opencontainers.image.source="https://github.com/pesca-dev/decentnoobbot"
 
 USER 10001
